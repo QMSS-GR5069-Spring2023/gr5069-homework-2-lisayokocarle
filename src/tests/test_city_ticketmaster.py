@@ -4,6 +4,7 @@ from city_ticketmaster import city_ticketmaster
 
 import pytest
 
+#Test the request function
 def test_for_api_get():
     with pytest.raises(TypeError):
         city_ticketmaster.apiget(city='Chicago')
