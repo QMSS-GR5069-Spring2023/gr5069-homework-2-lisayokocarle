@@ -15,7 +15,7 @@ $pip install -i https://test.pypi.org/simple/ city-ticketmaster
 
 ## Usage
 
-- TODO
+This package can be used to pull requests and save their own dataframes from the Ticket Master API.
 
 ## Contributing
 
