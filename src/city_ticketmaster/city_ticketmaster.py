@@ -32,7 +32,8 @@ def apiget(password, city, keyword = ""):
 
         url = 'https://app.ticketmaster.com/discovery/v2/events.json?city={c}&keyword={kw}&classificationName=music&apikey={api}'
         r= requests.get(url.format(c = city, kw = keyword, api=password))
-        
+
+       
         assert r.status_code == 200, "Uh oh, there was an issue with the server. Please doublecheck your input."
         test_json=r.json()
         try:
@@ -41,10 +42,10 @@ def apiget(password, city, keyword = ""):
         except KeyError:
                 print("No concerts with those parameters!")
                 
-        
+git        
     
 
-###Created class
+# Create a City class with several attributes
 class City():
     """
         Holds all of the data pulled from the TicketMaster API for
