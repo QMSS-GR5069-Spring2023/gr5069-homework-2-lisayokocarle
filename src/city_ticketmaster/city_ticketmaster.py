@@ -33,6 +33,9 @@ def apiget(password, city, keyword = ""):
         url = 'https://app.ticketmaster.com/discovery/v2/events.json?city={c}&keyword={kw}&classificationName=music&apikey={api}'
         r= requests.get(url.format(c = city, kw = keyword, api=password))
         
+        """
+        Print warning if there is an issue with the server
+        """
         assert r.status_code == 200, "Uh oh, there was an issue with the server. Please doublecheck your input."
         test_json=r.json()
         try:
