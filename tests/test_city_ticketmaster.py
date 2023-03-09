@@ -13,7 +13,8 @@ def test_for_api_get2():
 def test_apiget_with_only_one_value():
     with pytest.raises(TypeError):
         city_ticketmaster.apiget(city="Chicago")
-
+        
+# Test the City class
 def test_class_city():
     with pytest.raises(ValueError):
         city_ticketmaster.City(cityname = "")
