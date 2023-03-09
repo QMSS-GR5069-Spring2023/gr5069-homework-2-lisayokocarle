@@ -35,6 +35,8 @@ def apiget(password, city, keyword = ""):
         
         assert r.status_code == 200, "Uh oh, there was an issue with the server. Please doublecheck your input."
         test_json=r.json()
+
+        # Print the request result
         try:
                 objectids= test_json['_embedded']
                 return pd.DataFrame(objectids['events'])
