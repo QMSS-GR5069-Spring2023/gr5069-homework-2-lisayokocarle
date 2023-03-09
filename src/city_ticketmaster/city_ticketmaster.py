@@ -45,6 +45,8 @@ def apiget(password, city, keyword = ""):
     
 
 ###Created class
+
+### Create a City class with several attributes
 class City():
     """
         Holds all of the data pulled from the TicketMaster API for
